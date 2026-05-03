@@ -77,8 +77,8 @@ while timeLeft > 0:
 
 # Timer finished
 print("Time's up")
-subprocess.run(["afplay", "-v", "8", "/System/Library/Sounds/Submarine.aiff"])
-subprocess.run(["afplay", "-v", "8", "/System/Library/Sounds/Submarine.aiff"])
-subprocess.run(["afplay", "-v", "8", "/System/Library/Sounds/Submarine.aiff"])
-subprocess.run(["afplay", "-v", "8", "/System/Library/Sounds/Submarine.aiff"])
+
+for i in range(0, 4):
+    subprocess.run(["afplay", "-v", "8", "/System/Library/Sounds/Submarine.aiff"])
+
 clear_terminal()
